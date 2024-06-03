@@ -22,13 +22,10 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        // http.csrf(csrf -> csrf.disable());
-
-
         http
                 .authorizeHttpRequests((auth) ->
                         auth
-                                .dispatcherTypeMatchers( DispatcherType.ERROR).permitAll()
+                                .dispatcherTypeMatchers(DispatcherType.ERROR).permitAll()
                                 .requestMatchers("/api/posts/**", "/api/newuser").permitAll()
                                 .requestMatchers("/api/users/**").hasRole("blogg_admin")
                                 .anyRequest().authenticated()
@@ -40,10 +37,6 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.ignoringRequestMatchers("/api/newuser"));
 
-//        http
-//                .oauth2ResourceServer(ors -> ors.jwt(jwt -> jwt.jwtAuthenticationConverter(jwtAuthConverter)));
-//
-//        http.csrf(csrf -> csrf.disable());
 
         return http.build();
     }
