@@ -1,2 +1,1 @@
 # WebservicesBlogg
-Individuell inlämning webservices

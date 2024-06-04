@@ -1,7 +1,6 @@
 package com.example.websevicesblogg.DTOs;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class PostDTO {
     private Long id;

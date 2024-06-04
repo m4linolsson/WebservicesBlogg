@@ -20,8 +20,3 @@ values ('Welcome to my first attempt at Hypertext',
         3),
        ('CRUD Operations', 'Whats all this CRUD about', '2013-11-15', 3),
        ('Välkommen till min nya blogg!', 'Mitt första inlägg', '2013-11-26', 5);
-
-
---TODO add more posts
-
---ad text in postmanbodies

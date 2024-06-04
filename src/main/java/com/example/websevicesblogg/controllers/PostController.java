@@ -2,12 +2,8 @@ package com.example.websevicesblogg.controllers;
 
 import com.example.websevicesblogg.DTOs.PostDTO;
 import com.example.websevicesblogg.enteties.Post;
-import com.example.websevicesblogg.enteties.User;
-import com.example.websevicesblogg.repositories.PostRepository;
 import com.example.websevicesblogg.services.PostService;
-import com.example.websevicesblogg.services.PostServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
